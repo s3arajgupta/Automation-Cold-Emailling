@@ -18,7 +18,7 @@ logging.basicConfig(
 df = pd.read_csv("Palak_Awasthi.csv") # CSV should have 'Name' and 'Email' columns
 
 # Email account credentials
-EMAIL = "swaraj.gupta217@gmail.com"
+EMAIL = "xxxxxxxxxxxxxx@gmail.com"
 # https://support.google.com/accounts/answer/185833?hl=en
 PASSWORD = "mjtr lvxm bkdm iggb"  # Use App Password if using Gmail
 
