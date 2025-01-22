@@ -1,0 +1,6 @@
+python -m venv venv
+pip install numpy pandas
+
+venv\Scripts\activate
+python master.py
+deactivate
