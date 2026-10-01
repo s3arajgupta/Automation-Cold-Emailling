@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #24292f;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .highlight {
+            color: #0969da;
+            font-weight: 600;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 8px;
+            margin-bottom: 12px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .footer {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #d0d7de;
+            font-size: 0.9em;
+            color: #57606a;
+        }
+        .footer a {
+            color: #0969da;
+            text-decoration: none;
+        }
+        .ps {
+            margin-top: 15px;
+            font-size: 0.92em;
+            background: #f6f8fa;
+            padding: 10px 14px;
+            border-left: 3px solid #0969da;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hi {{ name }},</p>
+
+    <p>
+        I came across {{ company }}'s work in scalable data & ML platforms and was really impressed. 
+        {% if custom_note %}
+        {{ custom_note }}
+        {% endif %}
+        I am reaching out regarding Software Engineer and Data/MLOps opportunities within your team.
+    </p>
+
+    <p>At <b>Ericsson</b>, I develop and optimize distributed big data pipelines, data modeling, and MLOps platforms.</p>
+
+    <p><b>🚀 Areas where I can add immediate value:</b></p>
+    <ul>
+        <li><b>Data Engineering & Pipelines:</b> Built cloud-native ETL pipelines using PySpark, Kafka, Airflow, DBT, and lakehouse architectures.</li>
+        <li><b>Cloud & Kubernetes:</b> CNCF Certified Kubernetes Application Developer (CKAD), with hands-on multi-cloud deployment experience.</li>
+        <li><b>MLOps & GenAI Integration:</b> Automated ML lifecycle with MLflow, RAG-based systems, and model inference pipelines.</li>
+    </ul>
+
+    <p>
+        I have attached my resume and certifications for your review. Would you or someone on your engineering team be open to a <b>brief 10-minute introductory conversation</b> sometime this week or next?
+    </p>
+
+    <p>Looking forward to connecting!</p>
+
+    <div class="footer">
+        <b>Best regards,</b><br>
+        {{ sender_name }}<br>
+        {% if sender_title %}{{ sender_title }}<br>{% endif %}
+        {% if linkedin_url %}🔗 <a href="{{ linkedin_url }}">LinkedIn</a>{% endif %}
+        {% if github_url %} | 🔗 <a href="{{ github_url }}">GitHub</a>{% endif %}
+    </div>
+
+    {% if portfolio_highlight %}
+    <div class="ps">
+        <b>P.S.</b> {{ portfolio_highlight }}
+    </div>
+    {% endif %}
+</body>
+</html>

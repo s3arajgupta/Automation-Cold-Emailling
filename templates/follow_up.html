@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #24292f;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .footer {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #d0d7de;
+            font-size: 0.9em;
+            color: #57606a;
+        }
+        .footer a {
+            color: #0969da;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Hi {{ name }},</p>
+
+    <p>
+        I wanted to quickly follow up on my previous note regarding engineering opportunities at {{ company }}. 
+        I know your schedule is likely very busy, so I wanted to keep this brief.
+    </p>
+
+    <p>
+        If your team currently has bandwidth for a quick chat, I’d love to connect. If now isn't the right time, no worries at all!
+    </p>
+
+    <div class="footer">
+        <b>Best regards,</b><br>
+        {{ sender_name }}<br>
+        {% if linkedin_url %}🔗 <a href="{{ linkedin_url }}">LinkedIn</a>{% endif %}
+    </div>
+</body>
+</html>

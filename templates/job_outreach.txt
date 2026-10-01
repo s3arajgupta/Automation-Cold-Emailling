@@ -1,0 +1,26 @@
+Hi {{ name }},
+
+I came across {{ company }}'s work in scalable data & ML platforms and was really impressed.{% if custom_note %} {{ custom_note }}{% endif %}
+
+I am reaching out regarding Software Engineer and Data/MLOps opportunities within your team.
+
+At Ericsson, I develop and optimize distributed big data pipelines, data modeling, and MLOps platforms.
+
+Areas where I can add immediate value:
+- Data Engineering & Pipelines: Cloud-native ETL with PySpark, Kafka, Airflow, DBT.
+- Cloud & Kubernetes: CNCF Certified Kubernetes Application Developer (CKAD).
+- MLOps & GenAI Integration: Automated ML lifecycle with MLflow and production RAG pipelines.
+
+I have attached my resume and certifications for your review. Would you or someone on your engineering team be open to a brief 10-minute introductory conversation sometime this week or next?
+
+Looking forward to connecting!
+
+Best regards,
+{{ sender_name }}
+{% if sender_title %}{{ sender_title }}
+{% endif %}{% if linkedin_url %}LinkedIn: {{ linkedin_url }}
+{% endif %}{% if github_url %}GitHub: {{ github_url }}
+{% endif %}
+{% if portfolio_highlight %}
+P.S. {{ portfolio_highlight }}
+{% endif %}
